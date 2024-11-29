@@ -1,0 +1,156 @@
+TOM AI is a personal virtual assistant designed to perform a variety of tasks such as:
+######################
+playing YouTube videos
+Providing weather reports
+opening applications
+Performing calculations
+Fetching information from Wikipedia
+Sending WhatsApp messages and more. 
+The assistant is voice-activated and interacts with the user in real-time using speech recognition and text-to-speech functionalities.
+
+Features
+Voice Interaction:
+
+Listens to user commands using a microphone.
+Responds to user queries with a natural-sounding voice.
+Commands and Functionalities:
+
+Web Browsing: Open Google, YouTube, Gmail, or Wikipedia.
+YouTube Control: Play videos or songs directly on YouTube.
+Wikipedia Search: Fetch summarized information and optionally display results.
+App Control: Open or close common applications such as Notepad, Calculator, Paint, etc.
+Weather Report: Get weather updates for any city using OpenWeather API.
+Mathematical Calculations: Perform basic and advanced calculations.
+WhatsApp Messaging: Send instant WhatsApp messages using the phone number provided.
+System Control: Shut down the PC, close application windows.
+Custom Greetings: Greet the user based on the time of day.
+Standby Mode: Wait for further commands after a wake-up call.
+Error Handling:
+
+Handles cases of unrecognized or invalid commands gracefully.
+Provides error messages for network or processing issues.
+Customizable Responses:
+
+Friendly and randomized responses to make interactions more engaging.
+Modules and Dependencies
+
+Imported Libraries:
+* Speech Recognition: (speech_recognition) for converting speech to text.
+* Text-to-Speech: (pyttsx3) for text-to-speech functionality.
+* Web Browser Control: (webbrowser) for opening websites.
+* YouTube Playback: (pywhatkit) for controlling YouTube playback.
+* System Control: (os, subprocess, platform) for managing applications and shutting down the system.
+* Information Retrieval: (wikipedia) for fetching data from Wikipedia.
+* Weather API: (requests) for retrieving weather reports.
+* Window Management: (pygetwindow) for closing windows.
+* Date and Time: (datetime) for time-based greetings and responses.
+* Math Library: (math) for advanced mathematical computations.
+
+Additional Requirements:
+* OpenAI (not included in the code but it will improve the AI functions and makes it more real ).
+* Pyaudio: Used for capturing audio input from the microphone.
+Key Functions:
+
+Core Functionalities:
+talk_something(text):
+
+Converts the provided text into speech.
+Uses pyttsx3 for natural-sounding voice output.
+>hello_greeting():
+
+Returns a greeting based on the current time.
+>listen_for_user(prompt):
+
+Captures voice input from the user.
+Handles errors such as timeouts and unrecognized speech.
+>play_youtube(song):
+
+Plays a specified song or video on YouTube.
+>open_apps(app_name):
+
+Opens specified applications like Notepad, Calculator, or Paint.
+>calculations(expression):
+
+Evaluates basic mathematical expressions.
+>get_weather(city, api_key):
+
+Fetches weather reports using the OpenWeather API.
+>get_info_from_wikipedia(query):
+
+Retrieves summarized information from Wikipedia.
+>send_whatsapp_message(contact_number, message):
+
+Sends a message to a specified phone number using WhatsApp Web.
+>close_Window_tom(window_name):
+
+Closes specified application windows.
+>processingcommand(command):
+
+Parses and executes user commands based on keywords.
+Workflow
+Initialization:
+
+The assistant initializes and performs system checks.
+Awaits a wake-up call from the user (e.g., "Hello TOM" or "Hey TOM").
+Wake-Up and Command Recognition:
+
+Upon recognizing the wake-up command, TOM AI becomes active and listens for user commands.
+Processes and executes commands sequentially.
+Error Handling and Graceful Exit:
+
+Handles unrecognized commands or network issues.
+Responds politely and shuts down gracefully when instructed.
+How to Use
+Setup
+Install required Python libraries:
+bash
+Copy code
+pip install
+1. speechrecognition 
+2. pyttsx3
+3. pywhatkit 
+4. pyaudio
+5. wikipedia
+6. pygetwindow 
+7.requests
+Place the script in a suitable directory and ensure your system has a microphone and internet connectivity.
+Execution
+Run the script using Python:
+
+bash
+Copy code
+python tom_ai.py
+Interaction
+
+Wake up TOM AI with a greeting command (e.g., "Hello TOM").
+Provide commands for tasks like:
+"Open Google"
+"Play Shape of You on YouTube"
+"Get weather report for New York"
+"Calculate 25 plus 30"
+"Close Notepad"
+"Send WhatsApp message to 1234567890 saying Hello"
+Put TOM AI on standby by saying "Wait TOM."
+Shut down TOM AI by saying "Exit TOM."
+Customizations
+Modify responses in the talk_something function for personalized replies.
+Add more applications to the open_apps dictionary.
+Expand functionality by integrating new APIs or features.
+Error Handling
+Common Errors
+Network Issues: May fail to fetch weather or WhatsApp messages.
+Unrecognized Commands: TOM AI requests clarification.
+Missing Libraries: Ensure all dependencies are installed.
+Debugging Tips
+Check microphone settings if voice recognition fails.
+Ensure a stable internet connection for API-dependent features.
+Future Enhancements
+Integrate OpenAI for advanced conversational capabilities.
+Add support for additional languages.
+Implement a GUI for improved user interaction.
+
+note:
+THIS CODE IS FREE TO USE AND MODIFY ACCORDING TO YOUR CONVINIENCE
+#################################################################
+GOOD BYE AND HAVE FUN WITH TOM AI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
